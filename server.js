@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({ 
-  origin: 'https://demo-password-reset.netlify.app',
+  origin: 'https://https://password-reset-demotask-app.netlify.app',
   credentials: true 
 }));
 
