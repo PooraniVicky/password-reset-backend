@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({ 
-  origin: 'https://https://password-reset-demotask-app.netlify.app',
+  origin: 'https://password-reset-demotask-app.netlify.app',
   credentials: true 
 }));
 
@@ -24,7 +24,7 @@ app.use('/auth', apiRoutes);
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("Connected to MongoDB");
-    
+
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
